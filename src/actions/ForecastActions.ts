@@ -16,7 +16,7 @@ const GetForecast = (city: string) => async (
     });
 
     const res = await axios.get(
-      `http://api.openweathermap.org/data/2.5/forecast?q=${city}&cnt=9&appid=${process.env.REACT_APP_OWMID}`
+      `https://api.openweathermap.org/data/2.5/forecast?q=${city}&cnt=9&appid=${process.env.REACT_APP_OWMID}`
     );
 
     dispatch({
